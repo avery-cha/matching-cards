@@ -1,10 +1,8 @@
 import React, {useState, createContext, useEffect, useContext} from 'react';
 import App from './App';
 import Card from './Card'
+import NumberContext from './NumberContext';
 
-export const GameContext = createContext({
-  numCards: 0
-});
 
 const GameSetup = () => {
 
@@ -22,9 +20,9 @@ const GameSetup = () => {
         </div>
             : <div id='gameplay'>
                 <h2>Lets Play!</h2>
-              <GameContext.Provider value = {numCards}>
+              <NumberContext.Provider value = {numCards}>
                 <Card />
-              </GameContext.Provider>
+              </NumberContext.Provider>
               </div>}
     </>
   )

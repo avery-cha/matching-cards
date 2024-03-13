@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+
+.backCard{
+  width: 227px;
+  height: 315px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+
+#pokeCard{
+  border: 2px solid navy;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
